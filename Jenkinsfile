@@ -14,7 +14,6 @@ pipeline {
         }
         stage('Build') {
             steps {
-               sh 'brew install maven'
                 sh 'mvn -version'
                 sh 'mvn clean package'
             }
