@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-               sh 'echo "rootbaba" | sudo -S apt install maven -y'
+               sh 'brew install maven'
                 sh 'mvn -version'
                 sh 'mvn clean package'
             }
