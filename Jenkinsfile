@@ -9,10 +9,11 @@ pipeline {
             steps {
                 git branch: 'main', url: "${GITHUB_REPO_URL}"
             }
-            
+
         }
         stage('Build') {
             steps {
+                sh 'mvn -version'
                 sh 'mvn clean package'
             }
         }
