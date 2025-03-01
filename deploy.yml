@@ -4,7 +4,7 @@
   become: false
   tasks:
     - name: Pull the latest Docker image from Docker Hub
-      shell: docker pull jyotis0401/Scientific_Calculator_DevOps
+      shell: docker pull jyotis0401/scientific_calculator_devops
       register: pull_result
 
     - name: Display Docker Pull Result
@@ -18,12 +18,12 @@
 
     - name: Stop and remove old container if it exists
       shell: |
-        docker stop Scientific_Calculator_DevOps || true
-        docker rm Scientific_Calculator_DevOps || true
+        docker stop scientific_calculator_devops || true
+        docker rm scientific_calculator_devops || true
       ignore_errors: yes
 
     - name: Run the Docker container
-      command: docker run -it -d --name Scientific_Calculator_DevOps -p 5000:8080 jyotis0401/Scientific_Calculator_DevOps:latest
+      command: docker run -it -d --name scientific_calculator_devops -p 5000:8080 jyotis0401/scientific_calculator_devops:latest
       register: run_result
 
     - name: Display Container Run Result

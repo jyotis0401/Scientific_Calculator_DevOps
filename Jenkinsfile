@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-            GITHUB_REPO_URL = 'https://github.com/jyotis0401/Scientific_Calculator_DevOps.git'
-            DOCKER_IMAGE_NAME = 'jyotis0401/Scientific_Calculator_DevOps'
+            GITHUB_REPO_URL = 'https://github.com/jyotis0401/scientific_calculator_devops.git'
+            DOCKER_IMAGE_NAME = 'jyotis0401/scientific_calculator_devops'
             DOCKER_CREDENTIALS = 'Docker_Credential'
      }
     stages {
