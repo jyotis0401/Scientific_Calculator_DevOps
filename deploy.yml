@@ -11,10 +11,10 @@
       debug:
         var: pull_result
 
-    - name: Start Docker service
-      service:
-        name: docker
-        state: started
+    # - name: Start Docker service
+    #   service:
+    #     name: docker
+    #     state: started
 
     - name: Stop and remove old container if it exists
       shell: |
