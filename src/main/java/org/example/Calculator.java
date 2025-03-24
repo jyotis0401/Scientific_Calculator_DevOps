@@ -3,7 +3,7 @@ package org.example;
 public class Calculator {
 
     public static double squareRoot(double number) {
-        if (number < 0) throw new IllegalArgumentException("Please enter positive number");
+        if (number < 0) throw new IllegalArgumentException("Please enter positive soethingr");
         return Math.sqrt(number);
     }
 
